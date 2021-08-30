@@ -1,0 +1,3 @@
+[submodule ".freifunkMUC_community-packages"]
+	path = .freifunkMUC_community-packages
+	url = git@github.com:freifunkMUC/community-packages.git
