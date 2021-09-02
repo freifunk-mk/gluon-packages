@@ -1,5 +1,0 @@
-[submodule ".freifunkMUC_community-packages"]
-	path = .freifunkMUC_community-packages
-	url = git@github.com:freifunkMUC/community-packages.git
-[submodule ".freifunkMUC_community-packages/"]
-	branch = gluon-mesh-vpn-wireguard-vxlan
