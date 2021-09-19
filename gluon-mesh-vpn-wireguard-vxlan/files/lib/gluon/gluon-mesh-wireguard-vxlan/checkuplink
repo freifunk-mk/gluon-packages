@@ -27,7 +27,7 @@ check_address_family() {
 	#edit lordsandwurm
 	pingok=0
 	ping -6 -c 1 next.freifunk-mk.de &> /dev/null && pingok="success" || pingok="fail"
-	if [ "$?" -eq "0" && $pingok == "success" ]; then
+	if [ "$?" -eq "0" ] && [ $pingok == "success" ]; then
 		local ipv6="$(gluon-wan nslookup $gateway | grep 'Address [0-9]' | egrep -o '([a-f0-9:]+:+)+[a-f0-9]+')"
 		echo [$ipv6]$(echo $peer_endpoint | egrep -oe :[0-9]+$)
 	else
